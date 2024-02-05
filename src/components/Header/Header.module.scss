@@ -1,0 +1,79 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px 16px 24px;
+  border-radius: 17px;
+  background: rgb(18, 24, 37);
+  margin-bottom: 34px;
+
+  .leftSection,
+  .rightSection {
+    display: flex;
+    align-items: center;
+  }
+
+  .leftSection {
+    gap: 70px;
+
+    h1 {
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 29px;
+    }
+
+    .myOrg {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      span {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+      }
+    }
+  }
+
+  .rightSection {
+    border: 1px solid rgb(34, 43, 68);
+    border-radius: 6px;
+    background: rgb(18, 24, 37);
+    cursor: pointer;
+    padding: 8px 14px;
+    gap: 12px;
+
+    .btnContent {
+      text-align: left;
+
+      span {
+        color: rgb(97, 109, 141);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  header {
+    padding: 10px 16px 10px 16px !important;
+    margin: 34px 25px;
+  }
+
+  .leftSection {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .rightSection {
+    display: none !important;
+  }
+}
